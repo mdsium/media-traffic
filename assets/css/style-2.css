@@ -1,0 +1,29 @@
+/* ===================
+Base CSS 
+=================== */
+h3 {font-size: 22px;}
+.boxed-btn, input[type=submit],button[type=submit] { background-color: #06d6a0; transition: 0.3s ease;}
+
+/* ===================
+Header CSS 
+=================== */
+.header-area .boxed-btn:hover { box-shadow: 0px 3px 10px 0px #00000026; color: #fff;}
+
+/* ===================
+ Hero Area CSS 
+=================== */
+.hero-area { background-image: url(../img/hero-bg-02.png); }
+.hero-area {color: #fff; background-position: center; background-size: cover; padding: 100px 0; }
+.hero-area h1 { font-size: 45px; color: #fff; margin-top: 30%; }
+
+
+.single-content-box:hover,.cta-section.theme-2{
+  background: #04befe;
+background: -moz-linear-gradient(top,  #04befe 0%, #4481eb 100%);
+background: -webkit-linear-gradient(top,  #04befe 0%,#4481eb 100%);
+background: linear-gradient(to bottom,  #04befe 0%,#4481eb 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04befe', endColorstr='#4481eb',GradientType=0 );
+
+}
+
+.footer-area .social-link a:hover, .footer-area .social-link a:hover i.zmdi{color: #06d6a0;}
