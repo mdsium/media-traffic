@@ -137,7 +137,7 @@ button[type="submit"] {
   padding: 0;
   list-style: none;
 }
-.main-menu li:hover a{
+.main-menu li:hover >a{
   color: #ef486f;
 }
 
@@ -156,6 +156,45 @@ button[type="submit"] {
 
 .header-absolute .main-menu li a {color: #fff;}
 .header-absolute .main-menu li:hover a {color: #06d6a0;background: #fff;border-radius: 3px;padding: 7px 15px;}
+
+/* dropdown menu*/
+
+.main-menu li ul {
+  position: absolute;
+  top: 85px;
+  left: 0;
+  background: #fff;
+  width: 200px;
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  padding: 10px;
+  box-shadow: 0 0 5px #f6f6f6;
+  z-index: 1;
+}
+
+.main-menu li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  top: 47px;
+  display: block;
+}
+
+.main-menu li ul li {
+  display: block;
+}
+
+.main-menu li ul li a {
+  padding: 8px 15px;
+}
+
+.main-menu li:hover li:hover > a {
+  color: #fff;
+  background: #06d6a0;
+}
+
+
 
 
 .off-canvas-menu {position: fixed;top: 0;left: -300;width: 300px;height: 100%;z-index: 99;background: #fff;padding: 40px;opacity: 0; visibility: hidden; transition: .3s;}
